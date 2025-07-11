@@ -1,0 +1,24 @@
+import os
+
+def analizar_permisos(directorio):
+    print(f"\n🔍 Analizando permisos en la carpeta: {directorio}\n")
+
+    try:
+        for archivo in os.listdir(directorio):
+            ruta = os.path.join(directorio, archivo)
+
+            # Verificar permisos básicos
+            puede_leer = os.access(ruta, os.R_OK)
+            puede_escribir = os.access(ruta, os.W_OK)
+            puede_ejecutar = os.access(ruta, os.X_OK)
+
+            print(f"📄 {archivo}")
+            print(f"   Lectura: {'✔️' if puede_leer else '❌'}")
+            print(f"   Escritura: {'✔️' if puede_escribir else '❌'}")
+            print(f"   Ejecución: {'✔️' if puede_ejecutar else '❌'}\n")
+
+    except FileNotFoundError:
+        print("⚠️ La carpeta no fue encontrada. Verifica la ruta.")
+
+# Llama a la función con la carpeta test_dir
+analizar_permisos(".")
