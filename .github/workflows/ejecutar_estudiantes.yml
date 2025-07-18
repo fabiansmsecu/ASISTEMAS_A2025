@@ -1,0 +1,31 @@
+name: Ejecutar código Python del estudiante
+
+on:
+  push:
+    paths:
+      - '**.py'
+
+jobs:
+  ejecutar_codigo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar el código
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Instalar dependencias comunes
+      run: |
+        pip install pandas
+
+    - name: Ejecutar todos los scripts
+      run: |
+        echo "Ejecutando archivos .py encontrados..."
+        for file in $(find . -name "*.py"); do
+          echo "▶️ Ejecutando $file"
+          python "$file" || echo "❌ Error en $file"
+        done
