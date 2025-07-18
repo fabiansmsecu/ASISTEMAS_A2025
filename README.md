@@ -2,71 +2,52 @@ EXPLICACIÓN PARA QUE EL PROFESOR PUEDA VER SU CÓDIGO
 
 🔗 Enlace base del repositorio
 👉 https://github.com/fabiansmsecu/ASISTEMAS_A2025
+🧭 INSTRUCCIONES PARA COMPLETAR EL PASO 2 – FORK DEL REPOSITORIO DEL CURSO
+Estimado estudiante:
 
-🔹 PASO 2 – ¿Dónde hacer el Fork?
-Ingresa al enlace anterior.
+Para continuar con su entrega del curso ASISTEMAS A2025, siga atentamente estos pasos para realizar el Fork del repositorio base. Este proceso es obligatorio para crear su propia copia del proyecto y trabajar en él.
 
-En la parte superior derecha de la pantalla (cerca de tu foto de perfil), verás un botón que dice “Fork” (o "Bifurcar" si tienes GitHub en español).
+✅ ¿QUÉ ES UN FORK?
+Un Fork es una copia del repositorio del curso en su cuenta de GitHub. Le permitirá trabajar de forma independiente sin alterar el repositorio original del profesor.
 
-Haz clic allí.
+🔷 PASOS DETALLADOS PARA HACER EL FORK
+✅ Inicie sesión en GitHub con su cuenta personal. Si no tiene una, cree una en:
+👉 https://github.com
 
-Se abrirá una ventana preguntando dónde quieres hacer el fork → selecciona tu cuenta.
+🔗 Ingrese al repositorio del curso en este enlace:
+👉 https://github.com/fabiansmsecu/ASISTEMAS_A2025
 
-GitHub creará una copia del repositorio en tu propia cuenta. El enlace cambiará a algo como:
+🖱️ En la parte superior derecha de la pantalla, haga clic en el botón “Fork” (está junto al botón “Star” y cerca de su foto de perfil).
+📍 Si está en español, puede decir “Bifurcar”.
 
-arduino
-Copiar
-Editar
-https://github.com/tuUsuario/ASISTEMAS_A2025
-🔹 PASO 3 – ¿Dónde encontrar el botón "Code" para clonar?
-Ve a tu fork, es decir, el repositorio que ahora está en tu cuenta.
+💾 GitHub le pedirá confirmar dónde quiere guardar el fork. Seleccione su cuenta personal.
 
-Verás un botón verde que dice "Code" justo encima de los archivos.
+✅ Listo. GitHub creará una copia del repositorio con este formato:
+https://github.com/SuUsuario/ASISTEMAS_A2025
+(Reemplace “SuUsuario” por su nombre de usuario real)
 
-Haz clic en "Code" → copia el enlace que aparece en la pestaña HTTPS (es algo como https://github.com/tuUsuario/ASISTEMAS_A2025.git).
+📌 VERIFICACIÓN
+Sabrá que lo hizo bien si:
 
-Abre Git Bash o Terminal y usa ese enlace como en las instrucciones:
+Ve su nombre de usuario en la parte superior del repositorio.
 
-bash
-Copiar
-Editar
-git clone https://github.com/tuUsuario/ASISTEMAS_A2025.git
-cd ASISTEMAS_A2025
-🔹 PASO 4 – Crear una rama
-Una vez estés dentro de la carpeta clonada en tu PC, en la terminal:
+El repositorio se llama ASISTEMAS_A2025.
 
-bash
-Copiar
-Editar
-git checkout -b actividad1-TuApellidoTuNombre
-🔹 PASO 6 – ¿Dónde veo si el Push funcionó?
-Después de hacer:
+Puede ver los archivos del curso dentro del repositorio.
 
-bash
-Copiar
-Editar
-git push origin actividad1-TuApellidoTuNombre
-Ve otra vez a tu repositorio en GitHub.
+El profesor podrá verificar su fork aquí:
+👉 https://github.com/fabiansmsecu/ASISTEMAS_A2025/forks
 
-Verás una barra amarilla que dice algo como:
+💬 ¿QUÉ SIGUE?
+Una vez haya hecho el fork, continúe con los pasos 3 a 7 de la guía general:
 
-vbnet
-Copiar
-Editar
-Compare & pull request
-Haz clic allí.
+Clonar su fork
 
-🔹 PASO 7 – ¿Dónde se crea el Pull Request (PR)?
-En esa pantalla de “Compare & pull request”, asegúrate de lo siguiente:
+Crear su rama con su nombre y apellido
 
-Base repository: fabiansmsecu/ASISTEMAS_A2025
+Escribir su solución
 
-Head repository: tuUsuario/ASISTEMAS_A2025
+Hacer commit y push
 
-Escribe como título:
-Actividad 1 – Apellido Nombre
+Enviar un Pull Request
 
-Haz clic en el botón verde que dice “Create pull request”.
-
-✅ ¡Con eso tu profesor verá tu entrega automáticamente en el siguiente enlace!
-📌 https://github.com/fabiansmsecu/ASISTEMAS_A2025/pulls
